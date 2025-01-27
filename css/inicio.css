@@ -1,0 +1,174 @@
+
+/*--------------/inicio--------------*/
+
+/*--------------jugadores--------------*/
+#jugadores > h2{
+    font-size: 1.9em;
+    color:rgb(11, 69, 146);
+    border-bottom: 1px solid rgb(11, 69, 146);
+    padding-bottom: .2em;
+    padding-left: 0.3em;
+    margin-top: 1.1em;
+    width: 90%;
+}
+#jugadores > p{
+    margin: 1.5rem 1rem 3rem 1rem;
+}
+#jugadores > article{
+    /* Fix para eliminar margen no deseado*/
+    font-size: 0;
+    /* Utilizamos position:relative para posicionar relativamente el div hijo que contiene las características de los jugadores. */
+    position: relative;
+    height: 390px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin: 1%;
+    width: calc(50% - 1% - 16px);
+    display: inline-block;
+    vertical-align: top;
+}
+.jugador{
+    font-size: 1rem;
+    width: 45%;
+    display: inline-block;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+    border-right: 1px dotted rgba(0, 0, 0, 0.3);
+    vertical-align: middle;
+}
+
+#jugadores > article:hover .capitan:after {
+    top: 3%;
+    right: 3%;
+    z-index: 1;
+}
+#jugadores > article:hover .jugador:before {
+    top: 3%;
+    left: 3%;
+    z-index: 1;
+}
+.jugador figure{
+    max-width: 100%;
+}
+.jugador figure img{
+    max-width: 100%;
+    height: auto;
+    transition: all 0.7s;
+    position: relative;
+    z-index: 2;
+}
+#jugadores > article:hover .jugador figure img{
+    transform: scale(1.1);
+}
+
+.jugador-contenido {
+    padding: 20px;
+    text-align: center;
+}
+.jugador-titulo {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 0.3em;
+    margin-bottom: 0.6em;
+    color: #333;
+    transition: all 0.5s;
+    position: relative;
+    z-index: 3;
+    opacity: 0;
+    margin-top: -5%;
+}  
+#jugadores > article:hover .jugador .jugador-titulo{
+    color: #ffffff;
+    transform: scale(1.05);
+    background-color: rgb(11, 69, 146);
+    padding: 0.5em 0;
+    margin-top: 0;
+    opacity: 1;
+}
+.jugador-descripcion {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 0.2em;
+    transition: all 0.5s;
+}
+#jugadores > article:hover .jugador .jugador-descripcion{
+    transform: scale(1.05);
+    z-index: 1;
+}
+#jugadores > article > div:nth-of-type(2){
+    /* Fix para eliminar margen no deseado, debemos volver a formatear la fuente, sino no la veremos. */
+    font-size: 1rem;
+    width: 51%;
+    margin: 0 1% 0 3%;
+    /* Centramos el div en el eje y con las propiedades position: absolute; top: 50% y transform: translate(0, -50%) que en conjunto desde el top 0 del contenedor se posiciona a 50% de este, y con el translate se traslada nuevamente su posición pero un 50% desde donde se ubicó originalmente hacia arriba. */
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+#jugadores > article > div:nth-of-type(2) h2{
+    margin-bottom: .6em;
+    padding: .2em 0 .2em .2em;
+    width: 90%;
+    color: #ffffff;
+    background-color: rgb(11, 69, 146);
+}
+#jugadores > article > div:nth-of-type(2) ul{
+    margin-left: 3%;
+}
+
+#jugadores > article > div:nth-of-type(2) ul li{
+    padding: 0.2em 0;
+}
+
+#jugadores > article > div:nth-of-type(2) > div:last-of-type{
+    background: rgb(124,3,69);
+    background: -moz-radial-gradient(circle, rgba(124,3,69,1) 0%, rgba(116,1,48,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(124,3,69,1) 0%, rgba(116,1,48,1) 100%);
+    background: radial-gradient(circle, rgba(124,3,69,1) 0%, rgba(116,1,48,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7c0345",endColorstr="#740130",GradientType=1);
+    padding: 15px;
+    border-radius: 2em;
+    border: 2px dotted #ffffff;
+    width: 95%;
+    margin: .5em 0 0 -.5em;
+    position: relative;
+    overflow: hidden;
+}
+#jugadores > article:hover > div:nth-of-type(2) h2{
+    color: rgb(11, 69, 146);
+    background-color: #ffffff;
+}
+#jugadores > article:hover > div:nth-of-type(2) > div:last-of-type{
+    background: rgb(106,2,59);
+    background: -moz-radial-gradient(circle, rgba(106,2,59,1) 0%, rgba(90,0,37,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(106,2,59,1) 0%, rgba(90,0,37,1) 100%);
+    background: radial-gradient(circle, rgba(106,2,59,1) 0%, rgba(90,0,37,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6a023b",endColorstr="#5a0025",GradientType=1);
+}
+#jugadores > article > div:nth-of-type(2) > div:last-of-type h3, 
+#jugadores > article > div:nth-of-type(2) > div:last-of-type li{
+    color:#ffffff !important;
+}
+#jugadores > article > div:nth-of-type(2) > div:last-of-type h3{
+    border-bottom: 1px solid #ffffff;
+    font-size: 1em;
+    width: 95%;
+    padding-left: 2%;
+    margin-bottom: 2%;
+}
+#jugadores > article > div:nth-of-type(2) > div:last-of-type li span{
+    color:rgb(255, 251, 0);
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+#jugadores > article:hover > div:nth-of-type(2) > div:last-of-type:after{
+    opacity: 1;
+    z-index: 1;
+}
+
+
+

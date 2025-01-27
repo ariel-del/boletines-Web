@@ -1,0 +1,68 @@
+/*--------------header--------------*/
+header{
+    padding: 1.2em 10%;
+    background: rgb(1,198,239);
+    background: -moz-linear-gradient(0deg, rgba(1,198,239,1) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(1,198,239,1) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(0deg, rgba(1,198,239,1) 0%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#01c6ef",endColorstr="#ffffff",GradientType=1);
+}
+header > div{
+    font-size: 0;
+}
+header h1{
+    width: 20%;
+    height: 145px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+header h1 a{
+    background: url(../img/afa_logo.png) scroll no-repeat 0 0 border-box;
+    width: 100px;
+    height: 145px;
+    display: inline-block;
+    text-indent: -9999px;
+    font-size: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+header h1:hover{
+    filter: drop-shadow(0 0 0.7rem rgb(255,237,105));
+}
+nav{
+    display: inline-block;
+    /* Fix para eliminar margen no deseado. */
+    font-size: 0;
+    vertical-align: bottom;
+    width: 80%;
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    min-width: 150px;
+}
+nav ul li a{
+    /* Fix para eliminar margen no deseado, debemos volver a formatear la fuente, sino no la veremos. */
+    font-size: 1rem;
+    color: #ffffff;
+    background-color:rgb(11,69,146);
+    margin: 0 5px;
+    display: block;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border: 2px solid #ffffff;
+    text-transform: uppercase;
+    border-radius: 1.5rem;
+}
+nav ul li a:hover{
+    color: #ffffff;
+    background-color:rgb(0,135,196);
+    border-color:#0074c1;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/*--------------/header--------------*/

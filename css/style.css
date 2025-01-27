@@ -1,0 +1,254 @@
+@import url('header.css');
+@import url('inicio.css');
+@import url('responsive.css');
+
+/*Aquí colocamos reglas CSS para todo el documento que no dependan del ancho del dispositivo */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: #000000;
+    transition: all .5s;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+main{
+    background: rgba(1,198,239,1);
+    background: -moz-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(1,198,239,1) 10%);
+    background: -webkit-linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(1,198,239,1) 10%);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(1,198,239,1) 10%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#01c6ef",GradientType=1);
+}
+.fuente{
+    font-size: .9rem;
+    margin-bottom: 0 !important;
+}
+
+/*--------------banner--------------*/
+#banner::before{
+    content: "";
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 0;
+}
+#banner{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 50vh;
+    background: url(../img/logo.png) fixed no-repeat center 20%;
+    background-size: cover;
+}
+#banner > h2{
+    color: #ffffff;
+    font-size: 2.3em;
+    text-shadow: 2px 3px 5px rgb(0, 0, 0);
+    background-color: rgba(11, 69, 146, 0.6);
+    border-radius: 1em;
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* Centramos el div en el eje 'x' e 'y' con las propiedades position: absolute; top: 50% left:50% y transform: translate(-50%, -50%) que en conjunto desde el top 0 del contenedor se posiciona a 50% de este, y con el translate se traslada nuevamente su posición pero un 50% desde donde se ubicó originalmente hacia arriba, lo mismo ocurre en la dirección left. */
+    transform: translate(-50%, -50%);
+    width: 75%;
+    padding: 1em 1.1em;
+}
+/*--------------/banner--------------*/
+section{
+    margin: 1em 2em;
+    padding: 2em 4em;
+    background: rgb(255, 255, 255);
+}
+section:not(#banner){
+    border-radius: 2em;
+}
+
+/*--------------inicio--------------*/
+#inicio h3{
+    font-size: 1.5em;
+    color:rgb(11, 69, 146);
+    border-bottom: 1px solid rgb(11, 69, 146);
+    padding-bottom: .1em;
+    padding-left: 0.2em;
+    margin-top: 1em;
+    width: 75%;
+}
+#inicio > div{
+    margin: 1.5rem 1rem 3rem 1rem;
+}
+#inicio p{
+    line-height: 1.5;
+    margin-bottom: 1.2em;
+    text-align: justify;
+}
+#inicio > div figure{
+    text-align: center;
+}
+#inicio > div:nth-of-type(1){
+    font-size: 0;
+}
+#inicio > div:nth-of-type(1) p{
+    font-size: 1rem;
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+#inicio > div:nth-of-type(1) p:first-of-type{
+    width: calc(50% - 2rem);
+    margin-right: 2rem;
+}
+#inicio > div:nth-of-type(2){
+    font-size: 0;
+}
+#inicio > div:nth-of-type(2) > div{
+    font-size: 1rem;
+    display: inline-block;
+    width:  calc(50% - 2rem);
+    vertical-align: top;
+}
+#inicio > div:nth-of-type(2) > figure{
+    margin-left: 5%;
+    display: inline-block;
+    vertical-align: top;
+    width: calc(50% - 5%);
+}
+#inicio > div:nth-of-type(3){
+    font-size: 0;
+}
+#inicio > div:nth-of-type(3) > div{
+    font-size: 1rem;
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+#inicio > div:nth-of-type(3) > figure{
+    display: inline-block;
+    vertical-align: top;
+    width: calc(50% - 5%);
+    margin-right: 5%;
+}
+#inicio > div:nth-of-type(4){
+    columns: 2;
+    column-gap: 3rem;
+    vertical-align: top;
+}
+#inicio > div:nth-of-type(5){
+    font-size: 0;
+}
+#inicio > div:nth-of-type(5) > div{
+    font-size: 1rem;
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+#inicio > div:nth-of-type(5) > figure{
+    display: inline-block;
+    vertical-align: top;
+    width: calc(50% - 5%);
+    margin-left: 5%;
+}
+#inicio > div:nth-of-type(6){
+    font-size: 0;
+}
+#inicio > div:nth-of-type(6) > div{
+    font-size: 1rem;
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+}
+#inicio > div:nth-of-type(6) > figure{
+    display: inline-block;
+    vertical-align: top;
+    width: calc(50% - 5%);
+    margin-left: 5%;
+}
+
+#contacto h2{
+    font-size: 1.9em;
+    text-align: center;
+    color:rgb(11, 69, 146);
+    border-bottom: 1px solid rgb(11, 69, 146);
+    padding-bottom: .2em;
+    padding-left: 0.3em;
+    margin: 1.1em auto 0;
+    width: 90%;
+}
+#contacto p{
+    text-align: center;
+    margin: 1.1em auto 0;
+    width: 90%;
+}
+#contacto form > div{
+    width: 50%;
+    font-size: 0;
+    text-align: center;
+    margin: 3% auto;
+}
+
+#contacto form > div > input[type="email"] {
+    display: inline-block;
+    min-height: 50px;
+    min-width: 150px;
+    width: 80%;
+    padding: 0 1rem;
+    color: rgb(11, 69, 146);
+    font-size: 1rem;
+    border: 1px solid rgb(11, 69, 146);
+    border-radius: 6px 0 0 6px;
+    background-color: transparent;
+}
+#contacto form > div > input[type="submit"] {
+    box-sizing: content-box;
+    display: inline-block;
+    min-height: 50px;
+    height: 50px;
+    min-width: 100px;
+    width:20%;
+    border: none;
+    -webkit-border-top-right-radius: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    -moz-border-radius-topright: 6px;
+    -moz-border-radius-bottomright: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-radius: 0 6px 6px 0;
+    background-color:  rgb(11, 69, 146);
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+
+#contacto form > div > input[type="submit"]:hover {
+    background-color: rgb(0,135,196);
+}
+
+#contacto form > div > input[type="email"]:focus, 
+#contacto form > div > input[type="email"]:focus-visible {
+    border-color: rgb(0,135,196);
+    box-shadow: 1px 1px 14px 5px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+footer{
+    padding: 1.2em 15%;
+    background: rgb(1,198,239);
+    background: -moz-linear-gradient(0deg, rgba(1,198,239,1) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(1,198,239,1) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(0deg, rgba(1,198,239,1) 0%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#01c6ef",endColorstr="#ffffff",GradientType=1);
+    text-align: center;
+}
+

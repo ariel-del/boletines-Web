@@ -1,0 +1,316 @@
+/*----------------------------------------*/
+/* Configuración de Media Querie para estilos específicos para celulares (hasta 480px de ancho). */
+@media screen and (max-width:480px){
+    header{
+        padding: 1.2em 5%;
+    }
+    header h1{
+        width: 100%;
+        display: block;
+        margin: 0 auto 1rem;
+        text-align: center;
+        background-position: center center;
+    }
+    nav{
+        width: 100%;
+        display: block;
+    }
+    nav ul li{
+        display: block;
+        min-width: 150px;
+        margin: 5px;
+    }
+
+ 
+    #banner > h2 {
+        font-size: 2em;
+        width: 90%;
+    }
+    section{
+        border-radius: 1em !important;
+        margin: 2%;
+        padding: .3em 1em;
+    }
+    .fuente {
+        padding-left: 1em;
+    }
+    #inicio > div {
+        margin: 1rem;
+    }
+    #inicio h3 {
+        width: 95%;
+    }
+    #inicio > div:nth-child(n) :nth-child(n):not(img){
+        display: block !important;
+        width: 100% !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    #inicio > div:nth-of-type(3) > div {
+        margin-top: 1.2em;
+    }
+    #inicio > div:nth-of-type(4) {
+        columns: unset;
+    }
+    #inicio > div:nth-of-type(6) > figure {
+        margin-top: 5%;
+    }
+    #jugadores > h2 {
+        font-size: 1.6em;
+        width: 100%;
+    }
+    #jugadores > article {
+        display: block;
+        width: calc(100% - 1%);
+        height: initial;
+        margin: 3% 1%;
+        padding-bottom: 5%;;
+    }
+    .jugador{
+        display: block;
+        width: 100%;
+        position: initial;
+        transform: none;
+        border: none;
+    }
+    .jugador:before {
+        max-width: 100px;
+        max-height: 100px;
+    }
+    .capitan:after {
+        font-size: 6em;
+        max-width: 100px;
+        max-height: 100px;
+    }
+    #jugadores > article > div:nth-of-type(2) {
+        width: 100%;
+        position: initial;
+        transform: none;
+        padding: 20px;
+        margin: 0;
+    }
+    #jugadores > article > div:nth-of-type(2) h2 {
+        text-align: center;
+        width: 100%;
+    }
+    #jugadores > article .jugador .jugador-titulo {
+        display: none !important;
+    }
+    #jugadores > article .jugador .jugador-descripcion {
+        display: none !important;
+    }
+    #jugadores > article > div:nth-of-type(2) > div:last-of-type {
+        width: 100%;
+        margin: .5em 0 0 0;
+    }
+    #jugadores > article > div:nth-of-type(2) > div:last-of-type:after {
+        right: 5%;
+    }
+    #contacto form > div {
+        width: 100%;
+    }
+    #contacto form > div > input[type="email"] {
+        min-width: 50px;
+        width: 50%;
+    }
+}
+
+/*----------------------------------------*/
+/* Configuración de Media Querie para estilos específicos para tablets (hasta 768px de ancho).*/
+@media screen and (min-width:481px) and (max-width:768px){
+    header{
+        padding: 1.2em 5%;
+    }
+    header h1{
+        width: 100%;
+        display: block;
+        margin: 0 auto 1rem;
+        text-align: center;
+        background-position: center center;
+    }
+    nav{
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+    nav ul li{
+        display: block;
+        min-width: 150px;
+        margin: 5px;
+    }
+    #banner{
+        padding: 1em;
+        margin: 0;
+        height: 60vh;
+        background: url(../img/logo.png) scroll no-repeat 67% 45%;
+    }
+    #banner > h2 {
+        font-size: 2.2em;
+        width: 95%;
+    }
+    section{
+        border-radius: 1em !important;
+        margin: 2%;
+        padding: .3em 1em;
+    }
+    .fuente {
+        padding-left: 1em;
+    }
+    #inicio > div {
+        margin: 1rem;
+    }
+    #inicio h3 {
+        width: 95%;
+    }
+    #inicio > div:nth-child(n) :nth-child(n):not(img){
+        display: block !important;
+        width: 100% !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    #inicio > div:nth-of-type(3) > div {
+        margin-top: 1.2em;
+    }
+    #inicio > div:nth-of-type(4) {
+        columns: unset;
+    }
+    #inicio > div:nth-of-type(6) > figure {
+        margin-top: 5%;
+    }
+    #jugadores > h2 {
+        font-size: 1.6em;
+        width: 100%;
+    }
+    #jugadores > article {
+        display: block;
+        width: calc(100% - 1%);
+        height: initial;
+        margin: 3% 1%;
+        padding-bottom: 5%;;
+    }
+    .jugador{
+        display: block;
+        width: 100%;
+        position: initial;
+        transform: none;
+        border: none;
+    }
+    .jugador:before {
+        max-width: 200px;
+        max-height: 200px;
+    }
+    .capitan:after {
+        font-size: 10em;
+        max-width: 200px;
+        max-height: 200px;
+        line-height: normal;
+    }
+    #jugadores > article > div:nth-of-type(2) {
+        width: 100%;
+        position: initial;
+        transform: none;
+        padding: 20px;
+        margin: 0;
+    }
+    #jugadores > article > div:nth-of-type(2) h2 {
+        text-align: center;
+        width: 100%;
+    }
+    #jugadores > article .jugador .jugador-titulo {
+        display: none !important;
+    }
+    #jugadores > article .jugador .jugador-descripcion {
+        display: none !important;
+    }
+    #jugadores > article > div:nth-of-type(2) > div:last-of-type {
+        width: 100%;
+        margin: .5em 0 0 0;
+    }
+    #jugadores > article > div:nth-of-type(2) > div:last-of-type:after {
+        right: 5%;
+    }
+    #jugadores > article > div:nth-of-type(2) > div:last-of-type h3 {
+        padding-bottom: 1%;
+    }
+    #contacto form > div {
+        width: 100%;
+    }
+    #contacto form > div > input[type="email"] {
+        min-width: 100px;
+        width: 60%;
+    }
+}
+
+/*----------------------------------------*/
+/* Configuración de Media Querie para estilos específicos para PCs o Laptops (de 769 en adelante). */
+@media screen and (min-width:769px){
+    header > div{
+        max-width: 1400px;
+        margin: auto;
+    }
+    #banner > h2{
+        max-width: 1200px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width: 1399px){
+    #jugadores > article {
+        height: auto;
+    }
+    .jugador{
+        display: block;
+        width: 100%;
+        position: relative;
+        transform: none;
+        border: none;
+    }
+    #jugadores > article > div:nth-of-type(2) {
+        width: 100%;
+        position: relative;
+        transform: none;
+        padding: 20px;
+        margin: 0;
+    }
+    #jugadores > article > div:nth-of-type(2) h2 {
+        text-align: center;
+        width: 100%;
+    }
+    #jugadores > article > div:nth-of-type(2) ul {
+        margin-left: 3%;
+    }
+    #jugadores > article > div:nth-of-type(2) > div:last-of-type {
+        width: 100%;
+        margin: 0.5em 0 0 0;
+    }
+    #jugadores > article .jugador .jugador-titulo,
+    #jugadores > article .jugador .jugador-descripcion {
+        display: none !important;
+    }
+    #contacto form > div {
+        width: max(80%, 70%);
+    }
+    #contacto form > div > input[type="email"] {
+        width: 70%;
+     }
+}
+
+@media screen and (min-width:1400px){
+    header{
+        padding: 1.2em 15%;
+    }
+    
+    section:not(:first-of-type){
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #jugadores > article {
+        height: 430px;
+        padding-top: 30px;
+    }
+}
+
+
+
+
